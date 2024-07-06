@@ -38,7 +38,7 @@ $result = $stmt->get_result();
 $count = $result->num_rows;
 
 if ($count > 0) {
-    header('Location: http://localhost/work/adduser.php?q2=1');
+    header('Location: http://localhost/work/adduser.html?q2=1');
     exit();
 }
 
@@ -51,7 +51,7 @@ $result = $stmt->execute();
 
 // التحقق من نجاح التنفيذ
 if ($result === TRUE) {
-    header('Location: http://localhost/work/index.php');
+    header('Location: http://localhost/work/index.html');
     exit();
 } else {
     echo "erreur " . $stmt->error;
