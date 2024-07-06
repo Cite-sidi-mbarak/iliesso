@@ -7,9 +7,9 @@ $result = $conn->query($sql);
 $count = $result->num_rows;
 
 if ($count > 0) {
-    header('Location: http://localhost/work/index.php');
+    header('Location: http://localhost/work/index.html');
 } else {
-    header('Location: http://localhost/work/login.php');
+    header('Location: http://localhost/work/login.html');
 }
 $conn->close();
 ?>
