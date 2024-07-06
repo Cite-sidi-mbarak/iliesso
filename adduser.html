@@ -56,15 +56,7 @@
 <body>
     <div>
         <h2>Creer un nouvel utilisateur</h2>
-        <?php 
-        if (isset($_GET['q2']) && $_GET['q2'] == 1) {
-            echo "<p>Nom d'utilisateur deja enregistre</p>";
-        }
-
-        if (isset($_GET['q1']) && $_GET['q1'] == 1) {
-            echo "<p>Le mot de passe n'est pas le meme</p>";
-        }
-        ?>
+        <!-- PHP error messages removed for HTML version -->
         <form action="fun/adduser.php" method="get"> 
             <label>Nom et Prenom</label>
             <input type="text" name="wname" required><br>
